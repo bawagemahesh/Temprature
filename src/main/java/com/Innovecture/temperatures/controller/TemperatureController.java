@@ -2,9 +2,7 @@ package com.Innovecture.temperatures.controller;
 
 
 import com.Innovecture.temperatures.model.Hourly;
-import com.Innovecture.temperatures.model.Temperature;
 import com.Innovecture.temperatures.services.TemperatureService;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 

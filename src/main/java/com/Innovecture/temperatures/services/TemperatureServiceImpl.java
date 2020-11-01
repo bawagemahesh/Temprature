@@ -55,7 +55,7 @@ public class TemperatureServiceImpl implements TemperatureService {
         }
         HttpClient httpclient = HttpClients.createDefault();
         HttpResponse response = httpclient.execute(get);
-        JSONObject jsonGetTemp = null;
+        JSONObject jsonGetTemp;
         try {
             if (!(response.getStatusLine().getStatusCode() != HttpStatus.SC_OK)) {
                 HttpEntity entity = response.getEntity();
@@ -87,7 +87,7 @@ public class TemperatureServiceImpl implements TemperatureService {
                     .setParameter(APP_ID, APY_KEY);
             get = new HttpGet(builder.build());
             response = httpclient.execute(get);
-            JSONObject jsonGetTemp = null;
+            JSONObject jsonGetTemp;
             if (!(response.getStatusLine().getStatusCode() != HttpStatus.SC_OK)) {
                 HttpEntity entity = response.getEntity();
                 String rawResult = EntityUtils.toString(entity);

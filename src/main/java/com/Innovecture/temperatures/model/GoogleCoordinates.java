@@ -11,11 +11,9 @@ public class GoogleCoordinates {
                 ", longitute='" + longitute + '\'' +
                 '}';
     }
-
     public String getLatitute() {
         return latitute;
     }
-
     public void setLatitute(String latitute) {
         this.latitute = latitute;
     }
@@ -23,7 +21,6 @@ public class GoogleCoordinates {
     public String getLongitute() {
         return longitute;
     }
-
     public void setLongitute(String longitute) {
         this.longitute = longitute;
     }
