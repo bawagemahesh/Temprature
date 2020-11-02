@@ -7,18 +7,18 @@ import java.util.List;
 @ToString
 public class Hourly {
 
-    public int dt;
-    public double temp;
-    public double feels_like;
-    public int pressure;
-    public int humidity;
-    public double dew_point;
-    public int clouds;
-    public int visibility;
-    public double wind_speed;
-    public int wind_deg;
-    public List<Weather> weather;
-    public int pop;
+    private int dt;
+    private double temp;
+    private double feels_like;
+    private int pressure;
+    private int humidity;
+    private double dew_point;
+    private int clouds;
+    private int visibility;
+    private double wind_speed;
+    private int wind_deg;
+    private List<Weather> weather;
+    private int pop;
 
     public int getDt() {
         return dt;
